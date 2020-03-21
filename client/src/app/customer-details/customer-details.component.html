@@ -1,0 +1,26 @@
+
+<table>
+    <tr>
+    <th>ID</th>
+    <th>FIRSTNAME</th>
+    <th>LASTNAME</th>
+    <th>EMAIL</th>
+    <th>GENDER</th>
+    <th>ADDRESS</th>
+    <th>CITY</th>
+    <th>STATE</th>
+    </tr>
+    <tr *ngFor="let item of customerData">
+    <td>{{item.id}}</td>
+    <td>{{item.fName}}</td>
+    <td>{{item.lName}}</td>
+    <td>{{item.email}}</td>
+    <td>{{item.gender}}</td>
+    <td>{{item.address}}</td>
+    <td>{{item.city}}</td>
+    <td>{{item.state}}</td>
+    <td><button (click)="editCustomer(item.id)">EDIT</button></td>
+    <td><button (click)="deleteCustomer(item.id)">DELETE</button></td>
+    </tr>
+</table>
+  

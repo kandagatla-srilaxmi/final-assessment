@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <br>
+            <h5>ADD EMPLOYEE FORM</h5>
+            <form>
+                <div>
+                    <label>ENTER ID</label>
+                    <input type="text" class="form-control" [(ngModel)]="formData.id" name = "id">
+                </div>
+                <div> 
+                    <label>ENTER FIRSTNAME</label>
+                    <input type="text" class="form-control" [(ngModel)]="formData.fName" name = "fName">
+                </div>
+                <div> 
+                    <label>ENTER LASTNAME</label>
+                    <input type="text" class="form-control" [(ngModel)]="formData.lName" name = "lName">
+                </div>
+                
+
+                <div>
+                    <label>EMAIL</label>
+                    <input type="email" class="form-control" [(ngModel)]="formData.email" name = "email">
+                </div>
+                <div>
+                    <label>GENDER</label>
+                    <div>
+                    <input type="radio" class="form-control" [(ngModel)]="formData.gender" name = "gender" value="Male">
+                    <label class="form-check-label">Male</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" [(ngModel)]="formData.gender"  name = "gender" value="Female">
+                        <label class="form-check-label">Female</label>
+                    </div>
+                </div>
+                <div> 
+                    <label> ADDRESS</label>
+                    <input type="text" class="form-control" [(ngModel)]="formData.address" name = "address">
+                </div>
+                <div> 
+                    <label>CITY</label>
+                    <input type="text" class="form-control" [(ngModel)]="formData.city" name = "city">
+                </div>
+                <div> 
+                    <label>STATE</label>
+                    <input type="text" class="form-control" [(ngModel)]="formData.state" name = "state">
+                </div>
+                
+                <button class="btn btn-secondary" (click)="addDetails()">ADD</button>
+            </form>
+        </div>
+    </div>
+</div>
